@@ -1,26 +1,46 @@
-<form class="ui large form segment">
-  <h3 class="ui header">Add a Link</h3>
-  
-  <div class="field">
-    <label for="title">Title:</label>
-    <input name="title" #newtitle>  <!-- changed -->
-  </div>
-  <div class="field">
-    <label for="link">Link:</label>
-    <input name="link" #newlink> <!-- changed -->
-  </div>
-  
-  <!-- added this button -->
-  <button (click)="addArticle(newtitle, newlink)"
-          class="ui positive right floated button">
-    Submit link
-  </button>
-</form>
+<!--<form class="ui large form segment">-->
+  <!--<h3 class="ui header">Add a Link</h3>-->
+  <!---->
+  <!--<div class="field">-->
+    <!--<label for="title">Title:</label>-->
+    <!--<input name="title" #newtitle>  &lt;!&ndash; changed &ndash;&gt;-->
+  <!--</div>-->
+  <!--<div class="field">-->
+    <!--<label for="link">Link:</label>-->
+    <!--<input name="link" #newlink> &lt;!&ndash; changed &ndash;&gt;-->
+  <!--</div>-->
+  <!---->
+  <!--&lt;!&ndash; added this button &ndash;&gt;-->
+  <!--<button (click)="addArticle(newtitle, newlink)"-->
+          <!--class="ui positive right floated button">-->
+    <!--Submit link-->
+  <!--</button>-->
+<!--</form>-->
 
 
-<div class="ui grid posts">
-  <app-article
-    *ngFor="let article of sortedArticles()"
-    [article]="article">
-  </app-article>
+<!--<div class="ui grid posts">-->
+  <!--<app-article-->
+    <!--*ngFor="let article of sortedArticles()"-->
+    <!--[article]="article">-->
+  <!--</app-article>-->
+<!--</div>-->
+
+<!--Chapter3-->
+<!-- Menu Bar -->
+<div class="ui menu">
+  <div class="ui container">
+    <a href="#" class="header item">
+      <img class="logo" src="../assets/resources/images/ng-book-2-minibook.png">
+      ng-book 2
+    </a>
+    <div class="header item borderless">
+      <h1 class="ui header">
+        Angular 2 Inventory App
+      </h1>
+    </div>
+  </div>
+</div>
+
+<div class="ui main text container">
+  <app-inventory-app></app-inventory-app> <!-- <--- Our app loads here! -->
 </div>

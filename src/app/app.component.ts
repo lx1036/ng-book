@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Article} from "./article/article.model";
+import {Article} from './article/article.model';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import {Article} from "./article/article.model";
 })
 export class AppComponent {
   articles: Article[];
-  
+
   constructor() {
     this.articles = [
       new Article('Angular 2', 'http://angular.io', 3),
@@ -16,7 +16,7 @@ export class AppComponent {
       new Article('Angular Homepage', 'http://angular.io', 1),
     ];
   }
-  
+
   addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
     console.log(`Adding article title: ${title.value} and link: ${link.value}`);
     this.articles.push(new Article(title.value, link.value, 0));
@@ -24,7 +24,7 @@ export class AppComponent {
     link.value = '';
     return false;
   }
-  
+
   sortedArticles(): Article[] {
     return this.articles.sort((a: Article, b: Article) => a.votes - b.votes);
   }
