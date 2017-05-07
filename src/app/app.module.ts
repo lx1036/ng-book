@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -11,6 +11,9 @@ import { ProductRowComponent } from './chapter2/product-list/product-row/product
 import { PriceDisplayComponent } from './chapter2/product-list/product-row/price-display/price-display.component';
 import { ProductDepartmentComponent } from './chapter2/product-list/product-row/product-department/product-department.component';
 import { ProductImageComponent } from './chapter2/product-list/product-row/product-image/product-image.component';
+import { DemoFromSkuComponent } from './chapter5/demo-from-sku/demo-from-sku.component';
+import { DemoFormSkuBuilderComponent } from './chapter5/demo-form-sku-builder/demo-form-sku-builder.component';
+import { DemoFormNgModelComponent } from './chapter5/demo-form-ng-model/demo-form-ng-model.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +24,15 @@ import { ProductImageComponent } from './chapter2/product-list/product-row/produ
     ProductRowComponent,
     PriceDisplayComponent,
     ProductDepartmentComponent,
-    ProductImageComponent
+    ProductImageComponent,
+    DemoFromSkuComponent,
+    DemoFormSkuBuilderComponent,
+    DemoFormNgModelComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule
   ],
   providers: [],
