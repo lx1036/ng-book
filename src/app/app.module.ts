@@ -25,6 +25,8 @@ import { SimpleHttpComponent } from './chapter6/simple-http/simple-http.componen
 import { SearchBoxComponent } from './chapter6/youtube-search/search-box/search-box.component';
 import { SearchResultComponent } from './chapter6/youtube-search/search-result/search-result.component';
 import {youtubeServiceInjectables, YoutubeSearchComponent} from './chapter6/youtube-search/youtube-search.component';
+import { CustomFormTagComponent } from './forms/custom-form-tag/custom-form-tag.component';
+import { CustomFormComponent } from './forms/custom-form-tag/custom-form/custom-form.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,9 @@ import {youtubeServiceInjectables, YoutubeSearchComponent} from './chapter6/yout
     ChatThreadComponent,
     ChatMessageComponent,
     FromNowPipe,
-    ChatComponent
+    ChatComponent,
+    CustomFormTagComponent,
+    CustomFormComponent
   ],
   imports: [
     BrowserModule,

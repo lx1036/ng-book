@@ -1,0 +1,8 @@
+<form #form="ngForm">
+  <exe-counter name="counter" ngModel counterRangeMax="6" counterRangeMin="0"></exe-counter>
+  <!--<exe-counter name="counter" [ngModel]="initialValue"></exe-counter>-->
+  <button type="submit">Submit</button>
+</form>
+<pre>{{ form.value | json }}</pre>
+<p *ngIf="!form.valid">Counter is invalid!</p>
+<pre>{{ form.form.get('counter').errors | json }}</pre>
