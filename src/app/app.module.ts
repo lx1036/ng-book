@@ -62,7 +62,7 @@ import { ModelDrivenFormComponent } from './forms/model-driven/model-driven-form
   imports: [
     BrowserModule,
     FormsModule,
-    // ReactiveFormsModule,
+    ReactiveFormsModule,
     HttpModule
   ],
   providers: [
