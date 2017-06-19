@@ -27,6 +27,8 @@ import { SearchResultComponent } from './chapter6/youtube-search/search-result/s
 import {youtubeServiceInjectables, YoutubeSearchComponent} from './chapter6/youtube-search/youtube-search.component';
 import { CustomFormTagComponent } from './forms/custom-form-tag/custom-form-tag.component';
 import { CustomFormComponent } from './forms/custom-form-tag/custom-form/custom-form.component';
+import { TemplateDrivenFormComponent } from './forms/template-driven/template-driven-form.component';
+import { ModelDrivenFormComponent } from './forms/model-driven/model-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -39,8 +41,8 @@ import { CustomFormComponent } from './forms/custom-form-tag/custom-form/custom-
     ProductDepartmentComponent,
     ProductImageComponent,
     DemoFromSkuComponent,
-    DemoFormSkuBuilderComponent,
-    DemoFormNgModelComponent,
+    // DemoFormSkuBuilderComponent,
+    // DemoFormNgModelComponent,
     SimpleHttpComponent,
     YoutubeSearchComponent,
     SearchBoxComponent,
@@ -53,12 +55,14 @@ import { CustomFormComponent } from './forms/custom-form-tag/custom-form/custom-
     FromNowPipe,
     ChatComponent,
     CustomFormTagComponent,
-    CustomFormComponent
+    CustomFormComponent,
+    TemplateDrivenFormComponent,
+    ModelDrivenFormComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule,
+    // ReactiveFormsModule,
     HttpModule
   ],
   providers: [
