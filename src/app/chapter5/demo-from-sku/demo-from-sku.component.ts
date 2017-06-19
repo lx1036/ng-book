@@ -12,7 +12,7 @@ export class DemoFromSkuComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(form: any): void {
-    console.log('you submitted value:', form);
+  onSubmit(value: any): void {
+    console.log('you submitted value:', value);
   }
 }
